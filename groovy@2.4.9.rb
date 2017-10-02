@@ -1,4 +1,4 @@
-class Groovy < Formula
+class GroovyAT249 < Formula
   desc "Java-based scripting language"
   homepage "http://www.groovy-lang.org"
   url "https://dl.bintray.com/groovy/maven/apache-groovy-binary-2.4.9.zip"
