@@ -1,7 +1,7 @@
 class GroovyAT243 < Formula
   desc "Java-based scripting language"
   homepage "http://www.groovy-lang.org"
-  url "https://dl.bintray.com/groovy/maven/apache-groovy-binary-2.4.3.zip"
+  url "https://dl.bintray.com/groovy/maven/groovy-binary-2.4.3.zip"
 
   bottle :unneeded
 
