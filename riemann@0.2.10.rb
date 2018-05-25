@@ -1,4 +1,4 @@
-class Riemann < Formula
+class RiemannAT0210 < Formula
   desc "Event stream processor"
   homepage "http://riemann.io"
   url "https://github.com/riemann/riemann/releases/download/0.2.10/riemann-0.2.10.tar.bz2"
