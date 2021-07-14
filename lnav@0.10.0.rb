@@ -1,4 +1,4 @@
-class Lnav < Formula
+class LnavAT0100 < Formula
   desc "Curses-based tool for viewing and analyzing log files"
   homepage "https://lnav.org/"
   url "https://github.com/tstack/lnav/releases/download/v0.10.0-beta1/lnav-0.10.0.tar.gz"
