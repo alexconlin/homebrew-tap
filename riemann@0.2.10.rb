@@ -4,8 +4,6 @@ class RiemannAT0210 < Formula
   url "https://github.com/riemann/riemann/archive/0.2.10.tar.gz"
   sha256 "db59583e69a6da9a222f73bae753665e9a4924883ce6c516b9fa56d536448340"
 
-  bottle :unneeded
-
   def shim_script
     <<~EOS
       #!/bin/bash
