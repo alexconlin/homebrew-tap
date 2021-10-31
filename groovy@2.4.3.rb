@@ -4,8 +4,6 @@ class GroovyAT243 < Formula
   url "https://dl.bintray.com/groovy/maven/groovy-binary-2.4.3.zip"
   sha256 "b0c11d2ca5003956f1393138282a6e802af8c0033c5afdc8dc3af1e512e1dbe1"
 
-  bottle :unneeded
-
   option "with-invokedynamic", "Install the InvokeDynamic version of Groovy (only works with Java 1.7+)"
 
   deprecated_option "invokedynamic" => "with-invokedynamic"
