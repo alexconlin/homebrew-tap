@@ -14,29 +14,12 @@ class DnsHeaven < Formula
   def install
     bin.install "dns-heaven"
   end
-
-  plist_options :startup => false
-
-  def plist; <<~EOS
-    <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>com.greenboxal.dnsheaven</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>#{bin}/dns-heaven</string>
-    </array>
-    <key>KeepAlive</key>
-    <true/>
-    <key>RunAtLoad</key>
-    <true/>
-</dict>
-</plist>
-
-  EOS
-  end
+  
+  service do
+    run "#{bin}/dns-heaven"
+    require_root true
+    keep_alive true
+  done
 
   test do
     system "#{bin}/dns-heaven -version"
