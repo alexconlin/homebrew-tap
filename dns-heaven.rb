@@ -19,6 +19,8 @@ class DnsHeaven < Formula
     run "#{bin}/dns-heaven"
     require_root true
     keep_alive true
+    log_path var/"log/dns-heaven/stdout.log"
+    error_log_path var/"log/dns-heaven/stderr.log"
   end
 
   test do
