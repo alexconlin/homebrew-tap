@@ -19,7 +19,7 @@ class DnsHeaven < Formula
     run "#{bin}/dns-heaven"
     require_root true
     keep_alive true
-  done
+  end
 
   test do
     system "#{bin}/dns-heaven -version"
